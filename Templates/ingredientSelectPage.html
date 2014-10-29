@@ -1,0 +1,38 @@
+$def with (allIngredients)
+<link rel="stylesheet" type="text/css" href="static/css/imagepicker.css">
+<script type="text/javascript" src="static/js/jquery-2.1.0.min.js"></script>
+<script type="text/javascript" src="static/js/imagepicker.js"></script>
+<script>
+	function pageInit(){
+		\$("select").imagepicker()
+		main()
+	}
+
+	function createJavascriptArrayFromPythonList(id) {
+		listString = document.getElementById(id).innerHTML
+		// remove [ & ]
+		listString = listString.substring(1, listString.length-1);
+		// remove '
+		listString = listString.split("'").join("")
+		// remove leading space from each element
+		listString = listString.split(", ").join(",")
+		// Create a handy dandy array
+		listArray = listString.split(",")
+		return listArray
+	}
+
+	function main(){
+		ingredientArray = createJavascriptArrayFromPythonList("allIngredients")
+		htmlOut = "<select>"
+		for (i = 0; i < ingredientArray.length; i++) { 
+			htmlOut = htmlOut.concat("<option data-img-src='images/ingredients", ingredientArray[i], ".png' value='", ingredientArray[i], "'>")
+		}
+		htmlOut = htmlOut.concat("</select>")
+		//console.log(htmlOut)
+		document.getElementById("ingredientSelector").innerHTML = htmlOut
+	}
+
+</script>
+<div style="display:none" id="allIngredients">$allIngredients</div>
+<div id="ingredientSelector"></div>
+<script>pageInit()</script>

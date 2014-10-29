@@ -1,0 +1,900 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"you",
+				"youShouldBuy"
+			],
+			[
+				"buy",
+				"buyNext"
+			],
+			[
+				"bu",
+				"buyNext"
+			],
+			[
+				"th",
+				"thingsYouNeed"
+			],
+			[
+				"what",
+				"whatYouShouldBuy"
+			],
+			[
+				"ingre",
+				"ingredients"
+			],
+			[
+				"all",
+				"allRecipes"
+			],
+			[
+				"re",
+				"recipe"
+			],
+			[
+				"reci",
+				"recipeList"
+			],
+			[
+				"Re",
+				"RecipeBook"
+			],
+			[
+				"in",
+				"ingredient"
+			],
+			[
+				"de",
+				"debug"
+			],
+			[
+				"gla",
+				"glass"
+			],
+			[
+				"ins",
+				"instructions"
+			],
+			[
+				"ingred",
+				"Ingredients"
+			],
+			[
+				"this",
+				"thisIngredients"
+			],
+			[
+				"thisI",
+				"thisInstructions"
+			],
+			[
+				"thin",
+				"thisIngredientsAndGlass"
+			],
+			[
+				"inde",
+				"index"
+			],
+			[
+				"thisIn",
+				"thisIngredientsAndGlass"
+			],
+			[
+				"thi",
+				"thisIngredientsAndGlass"
+			],
+			[
+				"ing",
+				"ingrediensStart"
+			],
+			[
+				"rec",
+				"recipePointer"
+			],
+			[
+				"recipe",
+				"recipePointer"
+			],
+			[
+				"name",
+				"nameEnd"
+			],
+			[
+				"article",
+				"articleUtils"
+			],
+			[
+				"ebola",
+				"ebolaCount"
+			],
+			[
+				"art",
+				"articleSentimate"
+			],
+			[
+				"jso",
+				"jsonData"
+			],
+			[
+				"group",
+				"groupArray"
+			],
+			[
+				"split",
+				"splitString"
+			],
+			[
+				"fiel",
+				"fieldIndex"
+			],
+			[
+				"index",
+				"index1"
+			],
+			[
+				"pr",
+				"println"
+			],
+			[
+				"scre",
+				"screenArray"
+			],
+			[
+				"field",
+				"fieldLength"
+			],
+			[
+				"br",
+				"bracketCount"
+			],
+			[
+				"for",
+				"for	for"
+			],
+			[
+				"get",
+				"getNextIndex"
+			],
+			[
+				"start",
+				"startIndex"
+			],
+			[
+				"ind",
+				"index2"
+			],
+			[
+				"fie",
+				"fieldIndex"
+			],
+			[
+				"import",
+				"importantTypes"
+			],
+			[
+				"comm",
+				"comments"
+			],
+			[
+				"pos",
+				"position"
+			],
+			[
+				"fnam",
+				"fnameEnd"
+			],
+			[
+				"scree",
+				"screenCount"
+			],
+			[
+				"sc",
+				"screenArray"
+			],
+			[
+				"end",
+				"endIndex"
+			],
+			[
+				"st",
+				"startIndex"
+			],
+			[
+				"file",
+				"fileText"
+			],
+			[
+				"scr",
+				"screenArray"
+			],
+			[
+				"com",
+				"commentEnd"
+			],
+			[
+				"comment",
+				"commentStart"
+			],
+			[
+				"co",
+				"commentEnd"
+			],
+			[
+				"out",
+				"outString"
+			],
+			[
+				"lin",
+				"lineArray"
+			],
+			[
+				"lang",
+				"langCloseParen"
+			],
+			[
+				"lan",
+				"langCloseParen"
+			],
+			[
+				"line",
+				"lineArray"
+			],
+			[
+				"__",
+				"__name__"
+			],
+			[
+				"fdbd",
+				"fdbdlogReporter"
+			],
+			[
+				"messa",
+				"messageList"
+			],
+			[
+				"impor",
+				"importantMsgs"
+			],
+			[
+				"the",
+				"theseFnames"
+			],
+			[
+				"li",
+				"lineNum"
+			],
+			[
+				"screen",
+				"screenList"
+			],
+			[
+				"un",
+				"unmatchedScreens"
+			],
+			[
+				"kaj",
+				"kajScreen"
+			],
+			[
+				"ka",
+				"kajScreen"
+			],
+			[
+				"eng",
+				"engScreen"
+			],
+			[
+				"f1",
+				"f1_screens"
+			],
+			[
+				"lis",
+				"list1"
+			],
+			[
+				"f2",
+				"f2_screens"
+			],
+			[
+				"new",
+				"newFilePath"
+			],
+			[
+				"KJ",
+				"KJnotEN"
+			],
+			[
+				"EN",
+				"ENnotKJ"
+			],
+			[
+				"found",
+				"foundIssue"
+			],
+			[
+				"fo",
+				"foundIssue"
+			],
+			[
+				"ge",
+				"getFnames"
+			],
+			[
+				"nam",
+				"nameStart"
+			],
+			[
+				"cl",
+				"closeParen"
+			],
+			[
+				"list",
+				"listOfScreens"
+			],
+			[
+				"fi",
+				"fileLoop"
+			],
+			[
+				"open",
+				"openFiles"
+			],
+			[
+				"e",
+				"ePath"
+			],
+			[
+				"debu",
+				"debugFnames"
+			],
+			[
+				"deb",
+				"debugFiles"
+			],
+			[
+				"s",
+				"switch"
+			],
+			[
+				"member",
+				"memberName"
+			],
+			[
+				"module",
+				"moduleMembers"
+			],
+			[
+				"fnames",
+				"fnames"
+			],
+			[
+				"fname",
+				"fnameStart"
+			],
+			[
+				"local",
+				"localStack"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "extractRecipes.py",
+			"settings":
+			{
+				"buffer_size": 2400,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "recipeTools.py",
+			"settings":
+			{
+				"buffer_size": 3803,
+				"line_ending": "Windows"
+			}
+		}
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"console":
+	{
+		"height": 0.0
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/C/Users/imigat0/src/Math-Club-Project/dataGatherer/dataGatherer/spiders/cnn_spider.py",
+		"/C/Users/imigat0/src/Math-Club-Project/dataGatherer/dataGatherer/spiders/fox_spider.py",
+		"/C/Users/imigat0/src/Math-Club-Project/dataGatherer/dataGatherer/items.py",
+		"/C/Users/imigat0/src/Math-Club-Project/dataGatherer/articleUtils.py",
+		"/C/Users/imigat0/Desktop/allIngredients.txt",
+		"/C/Users/imigat0/Desktop/recipeTools.py",
+		"/C/Users/imigat0/Desktop/extractRecipes.py",
+		"/C/Users/imigat0/Desktop/menu.txt",
+		"/C/Users/imigat0/Desktop/menu.csv",
+		"/C/Users/imigat0/Desktop/recipeTools",
+		"/C/Users/imigat0/Desktop/menu2.txt",
+		"/C/Users/imigat0/Desktop/aaa.csv",
+		"/C/Users/imigat0/Desktop/recipes.csv",
+		"/C/Users/imigat0/Desktop/eggs.csv",
+		"/C/Users/imigat0/src/Math-Club-Project/dataGatherer/dataGatherer/spiders/lpps_spider.py",
+		"/C/Users/imigat0/Desktop/parseArticle.py",
+		"/C/Users/imigat0/src/Math-Club-Project/dataGatherer/out.csv",
+		"/C/Users/imigat0/AppData/Roaming/Sublime Text 2/Packages/Default/Preferences.sublime-settings",
+		"/C/Users/imigat0/AppData/Roaming/Sublime Text 2/Packages/User/Preferences.sublime-settings",
+		"/C/Users/imigat0/src/Math-Club-Project/.gitignore",
+		"/C/Users/imigat0/src/Math-Club-Project/dataGatherer/dataGatherer/spiders/import scrapy.py",
+		"/C/Users/imigat0/Desktop/Timesheets/Payroll Dates.txt",
+		"/C/Users/imigat0/src/Math-Club-Project/dataGatherer/hn.txt",
+		"/C/Users/imigat0/utils/fnameReporter.py",
+		"/C/Users/imigat0/src/findRPLs/test.py",
+		"/C/Users/imigat0/src/Math-Club-Project/dataGatherer/items.json",
+		"/C/Users/imigat0/src/Math-Club-Project/dataGatherer/items.csv",
+		"/C/Users/imigat0/src/Math-Club-Project/dataGatherer/scrapy.log",
+		"/C/Users/imigat0/src/Math-Club-Project/dataGatherer/dataGatherer/spiders/isbullshit_spiders.py",
+		"/C/Users/imigat0/Desktop/sentimate.py",
+		"/C/Users/imigat0/src/Math-Club-Project/dataGatherer/dataGatherer/spiders/craigs_spider.py",
+		"/C/Users/imigat0/src/Math-Club-Project/MathClubDataGatherer/MathClubDataGatherer/spiders/dmoz_spider.py",
+		"/C/Users/imigat0/src/Math-Club-Project/dataGatherer/Books",
+		"/C/Users/imigat0/src/gentbl_java/screenDefinitionFile.java",
+		"/C/Users/imigat0/src/gentbl_java/Screen.java",
+		"/C/Users/imigat0/src/gentbl_java/Group.java",
+		"/C/Users/imigat0/src/gentbl_java/Field.java",
+		"/C/Users/imigat0/Desktop/Don-Vac Meeting Attendees.txt",
+		"/C/Users/imigat0/src/gentbl_java/group.java",
+		"/C/Users/imigat0/Desktop/Desktop Cleanup/screens/KAKJ2MQO",
+		"/C/Users/imigat0/Desktop/Desktop Cleanup/screens/CCJ2PGMD",
+		"/C/Users/imigat0/Desktop/Desktop Cleanup/screens/tmp/CCJ2COBM_COBM",
+		"/C/Users/imigat0/Desktop/Desktop Cleanup/screens/CKJ2COBM",
+		"/C/Users/imigat0/Desktop/Desktop Cleanup/screens/CCJ2COBM",
+		"/C/Users/imigat0/Desktop/fdbdlog.txt",
+		"/C/Users/imigat0/Desktop/fdbdlog",
+		"/C/Users/imigat0/Desktop/Desktop Cleanup/screens/tmp/CCJ2PGMD_PGMD",
+		"/C/Users/imigat0/src/gentbl/parser.py",
+		"/C/Users/imigat0/Desktop/py3270-0.2.0/setup.py",
+		"/C/Users/imigat0/Desktop/py3270-0.2.0/readme.rst",
+		"/C/Users/imigat0/Desktop/py3270-0.2.0/PKG-INFO",
+		"/C/Users/imigat0/utils/ScreenExaminer.py",
+		"/C/Users/imigat0/table.txt",
+		"/C/Users/imigat0/Desktop/Timesheets/Hourly Employees.txt",
+		"/C/Users/imigat0/src/Math-Club-Project/MathClubDataGatherer/MathClubDataGatherer/spiders/__init__.py",
+		"/C/Users/imigat0/src/Math-Club-Project/MathClubDataGatherer/MathClubDataGatherer/settings.py",
+		"/C/Users/imigat0/src/Math-Club-Project/MathClubDataGatherer/MathClubDataGatherer/pipelines.py",
+		"/C/Users/imigat0/src/Math-Club-Project/MathClubDataGatherer/MathClubDataGatherer/items.py",
+		"/C/Users/imigat0/src/Math-Club-Project/MathClubDataGatherer/MathClubDataGatherer/__init__.py",
+		"/C/Users/imigat0/src/Math-Club-Project/MathClubDataGatherer/scrapy.cfg",
+		"/C/Users/imigat0/src/Math-Club-Project/MathClubDataGatherer/Resources",
+		"/C/Users/imigat0/src/Math-Club-Project/MathClubDataGatherer/Books",
+		"/C/Users/imigat0/Desktop/screens/CCJ2COBM",
+		"/C/Users/imigat0/Desktop/screenExtractor.py",
+		"/C/Users/imigat0/Desktop/ScreenExaminer.py",
+		"/C/Users/imigat0/Desktop/fnameReporter.py",
+		"/C/Users/imigat0/Desktop/screens/_examined.txt",
+		"/C/Users/imigat0/Desktop/test.py",
+		"/C/Users/imigat0/Desktop/screens/_screensexamined.txt",
+		"/C/Users/imigat0/Desktop/screens/screensExamined.txt",
+		"/C/Users/imigat0/Desktop/screens/tmp/CCJ2FILD_FILD",
+		"/C/Users/imigat0/Desktop/inputTest.py",
+		"/C/Program Files/Sublime Text 3/subl.exe",
+		"/C/Users/imigat0/src/gentbl/generator.py",
+		"/C/Users/imigat0/Desktop/kakj2le1",
+		"/C/Users/imigat0/Desktop/fnameReporter.pyc",
+		"/C/Users/imigat0/Desktop/screens/H01AC109.S1.SCREEN.OBJECTS(CCJ2COBM)",
+		"/C/Users/imigat0/Desktop/screens/H01AC109.S1.SCREEN.OBJECTS(CCJ2FILD)",
+		"/C/Users/imigat0/Desktop/screens/H01AC109.S1.SCREEN.OBJECTS(CCJ2FILE)",
+		"/C/Users/imigat0/Desktop/screens/H01AC109.S1.SCREEN.OBJECTS(CCJ2FILR)",
+		"/C/Users/imigat0/Desktop/screens/H01AC109.S1.SCREEN.OBJECTS(CCJ2CTLB)",
+		"/C/Users/imigat0/Desktop/screens/H01AC109.S1.SCREEN.OBJECTS(CCJ2FILA)",
+		"/C/Users/imigat0/Desktop/screens/H01AC109.S1.SCREEN.OBJECTS($CFHDTMP)",
+		"/C/Users/imigat0/Desktop/screens/H01AC109.S1.SCREEN.OBJECTS($CFHDTMQ)",
+		"/C/Users/imigat0/Desktop/screens/H01AC109.S1.SCREEN.OBJECTS($CFHDTTR)",
+		"/C/Users/imigat0/Desktop/screens/H01AC109.S1.SCREEN.OBJECTS($INFO)",
+		"/C/Users/imigat0/Desktop/screens/H01AC109.S1.SCREEN.OBJECTS($SUBAA)",
+		"/C/Users/imigat0/Desktop/screens/H01AC109.S1.SCREEN.OBJECTS($SUBAC)",
+		"/C/Users/imigat0/Desktop/screens/H01AC109.S1.SCREEN.OBJECTS($CFHDTFI)",
+		"/C/Users/imigat0/Desktop/screens/H01AC109.S1.SCREEN.OBJECTS($CFHDTLE)",
+		"/C/Users/imigat0/AppData/Roaming/IBM/Personal Communications/list.srl",
+		"/C/Users/imigat0/Desktop/screens/H01AC109.S1.SCREEN.OBJECTS($AAHDTLE)",
+		"/C/Users/imigat0/Desktop/screens/H01AC109.S1.SCREEN.OBJECTS($AAHDTIM)",
+		"/C/Users/imigat0/Desktop/screens/H01AC109.S1.SCREEN.OBJECTS($CFHDTDB)",
+		"/C/Users/imigat0/Desktop/screens/H01AC109.S1.SCREEN.OBJECTS($CFHDTAP)",
+		"/C/Users/imigat0/Desktop/screens/H01AC109.S1.SCREEN.OBJECTS($AAHDTMP)",
+		"/C/Users/imigat0/Desktop/screens/H01AC109.S1.SCREEN.OBJECTS($AAHDTMQ)",
+		"/C/Users/imigat0/Desktop/screens/H01AC109.S1.SCREEN.OBJECTS(KAZJ2LE1)",
+		"/C/Users/imigat0/Desktop/screens/H01AC109.S1.SCREEN.OBJECTS(MTKJ2OPQ)",
+		"/C/Users/imigat0/Desktop/screens/H01AC109.S1.SCREEN.OBJECTS(MTKJ2MQS)",
+		"/C/Users/imigat0/Desktop/screens/H01AC109.S1.SCREEN.OBJECTS(MTKJ2MQO)",
+		"/C/Users/imigat0/Desktop/screens/H01AC109.S1.SCREEN.OBJECTS(MTKJ2MQI)",
+		"/C/Users/imigat0/Desktop/screens/H01AC109.S1.SCREEN.OBJECTS(MTKJ2MQD)",
+		"/C/Users/imigat0/Desktop/screens/H01AC109.S1.SCREEN.OBJECTS(MTVJ2LCI)",
+		"/C/Users/imigat0/Desktop/screens/H01AC109.S1.SCREEN.OBJECTS(MTKP2QDF)",
+		"/C/Users/imigat0/Desktop/screens/H01AC109.S1.SCREEN.OBJECTS(MTKO2QDF)",
+		"/C/Users/imigat0/Desktop/screens/H01AC109.S1.SCREEN.OBJECTS(MTKN2QDF)",
+		"/C/Users/imigat0/Desktop/screens/H01AC109.S1.SCREEN.OBJECTS(MTKJ2QHD)",
+		"/C/Users/imigat0/Desktop/screens/H01AC109.S1.SCREEN.OBJECTS(MTVJ2MQD)",
+		"/C/Users/imigat0/Desktop/rpl.txt",
+		"/C/Users/imigat0/AppData/Roaming/IBM/Personal Communications/session1.ws",
+		"/C/Users/imigat0/Desktop/mqdmsg.txt",
+		"/C/Users/imigat0/Desktop/kazj2le1.txt",
+		"/C/Users/imigat0/Desktop/spotifyler/raldenhoven-downloadify-bb2f9d6/javascripts/background.js",
+		"/C/Users/imigat0/Desktop/spotifyler/raldenhoven-downloadify-bb2f9d6/javascripts/inject.js",
+		"/C/Users/imigat0/Desktop/spotifyler/raldenhoven-downloadify-bb2f9d6/manifest.json",
+		"/C/Users/imigat0/src/bandcamp-dl/bandcamp-dl/right-away-great-captain/the-bitter-end/1 - oh-deceiver.mp3",
+		"/C/Users/imigat0/.autohotkey.ahk",
+		"/C/Users/imigat0/Desktop/mqdmsg.html",
+		"/C/Users/imigat0/Desktop/MQDMSG.cmdlist",
+		"/C/Users/imigat0/Downloads/NWEA Launcher/manifest.json",
+		"/C/Users/imigat0/src/NWEA-Extension/manifest.json",
+		"/C/Users/imigat0/src/NWEA-Extension/background.js",
+		"/C/Users/imigat0/src/NWEA-Extension/application.js",
+		"/C/Users/imigat0/src/NWEA-Extension/Application.html",
+		"/C/Users/imigat0/src/NWEA-Extension/application.css",
+		"/C/Program Files (x86)/Google/Chrome/Application/37.0.2062.120/Extensions/external_extensions.json",
+		"/C/Users/imigat0/src/NWEA-Extension/untitled.html"
+	],
+	"find":
+	{
+		"height": 34.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+			"selected",
+			"",
+			"https://test.mapnwea.org",
+			""
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"midori",
+			"PEA",
+			"whisky",
+			"whiskey",
+			"russian",
+			"brave bull",
+			"OF GRENADINE",
+			"MESAURE BIANCO VERMOUTH",
+			"bianco ",
+			"white creme de me",
+			"single ",
+			"TABLESPS",
+			"jack dan",
+			"BAILEYS IRISH CREA",
+			"drops of",
+			"drop",
+			"drop of",
+			"drop",
+			"lemon peel",
+			"drop",
+			"lemon peel",
+			"piece",
+			"PINEAPPL ",
+			"lightly",
+			"or lime",
+			"to gar",
+			"to decorate",
+			"optional",
+			"MESURE",
+			"GALLIANO",
+			"beer",
+			"pinch",
+			"dash",
+			"dashes",
+			"\"))\n",
+			"table",
+			"teaspoon",
+			"dash",
+			"dash of",
+			"dash",
+			"dashes",
+			"dash",
+			"rum",
+			"scotch",
+			"scotch wh",
+			"    ",
+			"Black Magic",
+			"sugar syrup",
+			"<",
+			"ingrediens",
+			".*Yukiko's invention.*",
+			"Yukiko's invention",
+			"thisIngredientsAndGlass",
+			"!BR",
+			"allMenu",
+			"sentimate",
+			"  ",
+			"space",
+			"  ",
+			"print",
+			"\"",
+			"\\n",
+			"\\s.*\\n",
+			"^[A-z]\\n",
+			"\\s.*\\n",
+			"/jobs",
+			"\\s.*\\n",
+			" Field()",
+			"Chris",
+			"field",
+			"group",
+			"fname",
+			"mqopmo",
+			"text",
+			"this.text",
+			"GROUP Fname: OPBITINT",
+			"group",
+			"group{",
+			"group {",
+			"group{",
+			"group",
+			"type: group",
+			":screen",
+			":end",
+			":screen",
+			"group",
+			"if",
+			"int screenCount = this.text.split(\":SCREEN\", -1).length-1;",
+			"system",
+			"fileText",
+			":screen",
+			"'",
+			"system.out",
+			"strArray",
+			"Paren",
+			",",
+			";",
+			"custcol",
+			"return False",
+			"custcol",
+			"MSDZZNAMEI",
+			"~",
+			"screenex",
+			"screen",
+			"screeen",
+			"screen",
+			"\"~!~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\"\n",
+			"filecomparereport",
+			"getMatchingScreen",
+			"path[:path.find('_')+4]",
+			"kajpath = path",
+			"screen",
+			"comparing",
+			"return",
+			"fnames in english, not kanji",
+			",memberName)",
+			"doCompare",
+			"compareEngKanPair",
+			"ePath = os.getcwd() + '\\\\' + switch + memberName[len(switch):]\n		kPath = os.getcwd() + '\\\\' + kanjiPrefix + memberName[len(kanjiPrefix):] \n		if os.path.isfile(kPath):\n			hasDiff = fnameReporter.fileCompareReport(ePath, kPath)\n			if(hasDiff):\n				subprocess.call(['C:\\Program Files\\Sublime Text 3\\\\subl.exe', ePath, kPath])\n				choice = raw_input(\"Enter \\\"n\\\" to continue, press enter to compare again...\")\n				while \"n\" != choice:\n					fnameReporter.fileCompareReport(ePath, kPath)\n					choice = raw_input(\"Enter \\\"n\\\" to continue, press enter to compare again...\")",
+			"ePath = os.getcwd() + '\\\\' + switch + memberName[len(switch):]",
+			"ePath = os.getcwd() + '\\\\' + switch + memberName[len(switch):]\n		kPath = os.getcwd() + '\\\\' + kanjiPrefix + memberName[len(kanjiPrefix):] \n		if os.path.isfile(kPath):\n			hasDiff = fnameReporter.fileCompareReport(ePath, kPath)\n			if(hasDiff):\n				subprocess.call(['C:\\Program Files\\Sublime Text 3\\\\subl.exe', ePath, kPath])\n				choice = raw_input(\"Enter \\\"n\\\" to continue, press enter to compare again...\")\n				while \"n\" != choice:\n					fnameReporter.fileCompareReport(ePath, kPath)\n					choice = raw_input(\"Enter \\\"n\\\" to continue, press enter to compare again...\")",
+			"if os.path.isfile(kPath):\n			if(fnameReporter.fileCompareReport(ePath, kPath)):\n				subprocess.call(['C:\\Program Files\\Sublime Text 3\\\\subl.exe', ePath, kPath])\n				raw_input(\"Press Enter to continue...\")",
+			"rw",
+			" ",
+			"binary~",
+			"initial size",
+			"FNAME~SECOND| ",
+			"/*"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": true,
+		"replace_history":
+		[
+			"	",
+			"simple syrup",
+			"ingredients",
+			"",
+			"thisRecipe",
+			"allRecipe",
+			"sentiment",
+			"	",
+			" ",
+			"\\n",
+			"",
+			"\\n",
+			"",
+			" scrapy.Field()",
+			"this.text",
+			"\"",
+			"lineArray",
+			"Bracket",
+			"",
+			"\n",
+			"-",
+			"path[3:]",
+			"return path",
+			"path",
+			",memberName,openFiles,fileLoop)",
+			"compareEngKanPair",
+			"choice = raw_input(\"Press Enter to continue, enter anything else to compare again...\")",
+			"",
+			"text~",
+			"22",
+			"21",
+			"20",
+			"19",
+			"18",
+			"17",
+			"16",
+			"15",
+			"14",
+			"13",
+			"12",
+			"11",
+			"10",
+			"09",
+			"08",
+			"07",
+			"06",
+			"05",
+			"04",
+			"03",
+			"02",
+			"01",
+			"APPLTY00",
+			"APPLTYFF",
+			"APPLTYDF",
+			"https://test.mapnwea.org",
+			""
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 1,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "extractRecipes.py",
+					"settings":
+					{
+						"buffer_size": 2400,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Python/Python.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "recipeTools.py",
+					"settings":
+					{
+						"buffer_size": 3803,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Python/Python.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 0.0
+	},
+	"input":
+	{
+		"height": 0.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"replace":
+	{
+		"height": 66.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+			[
+				"",
+				"/C/Users/imigat0/Desktop/fnameReporter.py"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 178.0,
+	"status_bar_visible": true
+}

@@ -1,0 +1,5 @@
+$def with (ingredient_Form)
+<form name="main" method="post"> 
+$if not ingredient_Form.valid: <p class="error">Form didn't validate. Are you doing something weird?:</p>
+$:ingredient_Form.render()
+<input type="submit" />    </form>
