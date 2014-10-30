@@ -1,0 +1,6 @@
+$def with (recipes)
+<link rel="stylesheet" type="text/css" href="static/css/style.css">
+<ul>
+	$for recipe in recipes:
+		<li><a href="recipe/$recipe.name">$recipe.name <br> <img class="recipe-pic-small" src="$recipe.picture"></a></li>
+</ul>

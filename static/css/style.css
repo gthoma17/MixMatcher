@@ -4,3 +4,11 @@ div.ingredients{
 	margin: 5px;
 	padding: 5px;
 }
+.recipe-pic-small{
+	height:100px;
+	width: 75px;
+}
+.recipe-pic-large{
+	height:200px;
+	width: 150px;
+}

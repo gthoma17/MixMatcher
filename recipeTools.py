@@ -102,6 +102,14 @@ class RecipeBook(object):
 			youShouldBuy.append(buyNext)
 		return youShouldBuy
 
+	def export(self, fileName):
+		fOut = open(fileName+".csv", 'wb')
+		writer = csv.writer(fOut)
+		writer.writerow( ('Name', 'Instructions', 'Glass', 'Ingredients', 'sanitizedIngredients') )
+		for recipe in self.recipeList:
+			writer.writerow( (recipe.name, recipe.instructions, recipe.glass, recipe.ingredients, recipe.sanitizedIngredients) )
+
+
 
 class Inventory(object):
 	def __init__(self, ingredients):
@@ -111,9 +119,8 @@ class Inventory(object):
 
 def main():
 	allRecipes = RecipeBook(sys.argv[1])
-	stock = Inventory(["KAHLUA", "LEMON JUICE", "CREAM", "SIMPLE SYRUP", "BAILEYS IRISH CREAM", "DARK RUM", "VODKA", "WHISKY", "WHISKEY", "RUM", "GRENADINE", "ORANGE JUICE", "PEACH SCHNAPPS","WHITE RUM", "PEACH LIQUEUR", "ICE"])
-	#print allRecipes.whatCanYouMake(stock)
-	print "Your next 10 purchases should be (in order): " + str(allRecipes.whatYouShouldBuy(stock))
+	allRecipes.export("allStuff")
+
 
 
 if __name__ == "__main__":
