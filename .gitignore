@@ -101,4 +101,4 @@ $RECYCLE.BIN/
 *.msp
 
 #custom
-secrets.conf
+config.conf
