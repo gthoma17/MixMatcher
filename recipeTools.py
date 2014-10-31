@@ -3,6 +3,7 @@ import os
 import csv
 import re
 import base64
+import pickle
 
 class Recipe(object):
   	def __init__(self, name, instructions, glass, ingredients):
@@ -110,7 +111,9 @@ class RecipeBook(object):
 		writer = csv.writer(fOut)
 		writer.writerow( ('name', 'instructions', 'glass', 'ingredients', 'sanitizedIngredients', 'image') )
 		for recipe in self.recipeList:
-			writer.writerow( (recipe.name, recipe.instructions, recipe.glass, recipe.ingredients, recipe.sanitizedIngredients, recipe.image) )
+			pickledIngredients = pickle.dumps(recipe.ingredients).replace("\n","|")
+			pickledSanitizedIngredients = pickle.dumps(recipe.sanitizedIngredients).replace("\n","|")
+			writer.writerow( (recipe.name, recipe.instructions, recipe.glass, pickledIngredients, pickledSanitizedIngredients, recipe.image) )
 
 	def setImages(self, path):
 		for root, dirs, images in os.walk(path):

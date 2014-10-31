@@ -1,6 +1,7 @@
 import MySQLdb 
 import csv
 import sys
+import pickle
 
 
 
@@ -45,7 +46,7 @@ def insertRecipes(csvFile, cursor):
 			query = add_recipe.format(sanitize(csvRow[0]), sanitize(csvRow[1]), sanitize(csvRow[2]), sanitize(csvRow[3]), sanitize(csvRow[4]), sanitize(image))
 			cursor.execute(query)
 			print "-inserting ingredients into ingredient table"
-			ingredients = eval(csvRow[4])
+			ingredients = pickle.loads(csvRow[4].replace("|","\n"))
 			
 			for ingredient in ingredients:
 				insertIngredient(ingredient, cursor)

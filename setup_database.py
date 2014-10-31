@@ -95,8 +95,6 @@ def tblExists(name, cursor):
 	else:
 		return False
 
-def sanitize(inString):
-	return "'"+(inString.replace("'","\\'").rstrip().lstrip())+"'"
 
 if __name__ == "__main__":
 	main(sys.argv[1])	
