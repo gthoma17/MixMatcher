@@ -1,6 +1,6 @@
 [Database Setup]
-DBname="database"
-DBuser="user"
-DBpassword="password"
+DBname=database
+DBuser=user
+DBpassword=password
 DBhost=localhost
 DBport=3306
