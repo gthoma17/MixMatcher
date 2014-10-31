@@ -1,6 +1,8 @@
 import sys
+import os
 import csv
 import re
+import base64
 
 class Recipe(object):
   	def __init__(self, name, instructions, glass, ingredients):
@@ -8,6 +10,7 @@ class Recipe(object):
 		self.glass = glass
 		self.instructions = instructions
 		self.ingredients = ingredients
+		self.image = ""
 	
 	
 		self.sanitizedIngredients = []
@@ -64,7 +67,7 @@ class RecipeBook(object):
 		try:
 			reader = csv.reader(f)
 			for row in reader:
-				self.recipeList.append(Recipe(row[0], row[1], row[2], row[3:len(row)]))
+				self.recipeList.append(Recipe(row[0], row[1], row[2], row[3:len(row)-1]))
 		finally:
 			f.close()
 
@@ -105,9 +108,24 @@ class RecipeBook(object):
 	def export(self, fileName):
 		fOut = open(fileName+".csv", 'wb')
 		writer = csv.writer(fOut)
-		writer.writerow( ('Name', 'Instructions', 'Glass', 'Ingredients', 'sanitizedIngredients') )
+		writer.writerow( ('name', 'instructions', 'glass', 'ingredients', 'sanitizedIngredients', 'image') )
 		for recipe in self.recipeList:
-			writer.writerow( (recipe.name, recipe.instructions, recipe.glass, recipe.ingredients, recipe.sanitizedIngredients) )
+			writer.writerow( (recipe.name, recipe.instructions, recipe.glass, recipe.ingredients, recipe.sanitizedIngredients, recipe.image) )
+
+	def setImages(self, path):
+		for root, dirs, images in os.walk(path):
+			for image in images:
+				imageRecipe = image.lower()
+				imageRecipe = imageRecipe.replace("_"," ")
+				imageRecipe = imageRecipe.replace(".jpg","")
+				imageRecipe = imageRecipe.replace(".png","")
+				for recipe in self.recipeList:
+					if recipe.name.lower() == imageRecipe:
+						with open(path+"\\"+image, "rb") as image_file:
+							encoded_string = "data:image/jpeg;base64," + base64.b64encode(image_file.read())
+						recipe.image = encoded_string
+		#for recipe in self.recipeList:
+		#	print recipe.name + " image: " + recipe.image
 
 
 
@@ -118,8 +136,9 @@ class Inventory(object):
 
 
 def main():
-	allRecipes = RecipeBook(sys.argv[1])
-	allRecipes.export("allStuff")
+	allRecipes = RecipeBook("C:\Users\imigat0\src\MixMatcher\menu.csv")
+	allRecipes.setImages("C:\Users\imigat0\desktop\images")
+	allRecipes.export("allstuff")
 
 
 
