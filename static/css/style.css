@@ -1,14 +1,43 @@
-div.ingredients{
-	height:150px;
-	width:150px;
-	margin: 5px;
-	padding: 5px;
-}
 .recipe-pic-small{
-	height:50%;
-	width: 50%;
+	-webkit-transform: scale(0.5); /* Saf3.1+, Chrome */
+     -moz-transform: scale(0.5); /* FF3.5+ */
+      -ms-transform: scale(0.5); /* IE9 */
+       -o-transform: scale(0.5); /* Opera 10.5+ */
+          transform: scale(0.5);
+             /* IE6–IE9 */
+             filter: progid:DXImageTransform.Microsoft.Matrix(M11=0.9999619230641713, M12=-0.008726535498373935, M21=0.008726535498373935, M22=0.9999619230641713,SizingMethod='auto expand');
 }
 .recipe-pic-large{
-	height:100%;
-	width: 100%;
+
+}
+.recipe-link{
+	height: 200px;
+	width: 200px;
+}
+.ingredient-selector{
+	display:inline-flex;
+	margin: 5px;
+	padding: 5px;
+	height: 100px;
+	width: 250px;
+}
+.ingredient-name{
+	display: block;
+	margin: 0 auto;
+    width: 100%;
+}
+/*.ingredient-image{
+	 margin: 0 auto;
+	 display: block;
+}*/
+.ingredient-pic-small{
+	margin: 0 auto;
+	display: block;
+	-webkit-transform: scale(0.25); /* Saf3.1+, Chrome */
+     -moz-transform: scale(0.25); /* FF3.5+ */
+      -ms-transform: scale(0.25); /* IE9 */
+       -o-transform: scale(0.25); /* Opera 10.5+ */
+          transform: scale(0.25);
+             /* IE6–IE9 */
+             filter: progid:DXImageTransform.Microsoft.Matrix(M11=0.9999619230641713, M12=-0.008726535498373935, M21=0.008726535498373935, M22=0.9999619230641713,SizingMethod='auto expand');
 }

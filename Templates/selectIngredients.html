@@ -1,0 +1,36 @@
+$def with (ingredients)
+<link rel="stylesheet" type="text/css" href="static/css/style.css">
+<script type="text/javascript">
+	selectedIngredients = ""
+	function main() {
+		console.log("hello")
+	}
+	function toggle(id) {
+		thisItem = document.getElementById(id)
+		console.log("selected so far: " + selectedIngredients)
+		if (selectedIngredients.indexOf(id+"|")>-1) {
+			selectedIngredients = selectedIngredients.replace(id+"|", "")
+			thisItem.style.background = "transparent"
+		}
+		else{
+			selectedIngredients = selectedIngredients.concat(id,"|")
+			thisItem.style.background = "red"
+		}
+		console.log("now selected so far: " + selectedIngredients)
+	}
+	function prepItem(id) {
+		thisItem = document.getElementById(id)
+		thisItem.style.background = "transparent"
+		thisItem.addEventListener("click", function(){ toggle(id); });
+	}
+</script>
+
+	$for ingredient in ingredients:
+		<div class="ingredient-selector" id="ingredient-$ingredient.id">
+			<div class="ingredient-name">$ingredient.name</div> <br> <img class="ingredient-pic-small" src="$ingredient.picture">
+		</div>
+		<script type="text/javascript">
+			prepItem("ingredient-$ingredient.id")
+		</script>
+
+<script type="text/javascript">main()</script>
