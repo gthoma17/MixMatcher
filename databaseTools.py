@@ -46,10 +46,36 @@ def insertRecipes(csvFile, cursor):
 			query = add_recipe.format(sanitize(csvRow[0]), sanitize(csvRow[1]), sanitize(csvRow[2]), sanitize(csvRow[3]), sanitize(csvRow[4]), sanitize(image))
 			cursor.execute(query)
 			print "-inserting ingredients into ingredient table"
+			recipeId = cursor.lastrowid
 			ingredients = pickle.loads(csvRow[4].replace("|","\n"))
 			
 			for ingredient in ingredients:
 				insertIngredient(ingredient, cursor)
+				insertRelationship(ingredient, csvRow[0], cursor)
+
+def insertRelationship(ingredientName, recipeName, cursor):
+	add_relationship = ("INSERT INTO recipe_ingredient_relations "
+	               "(ingredient_id, recipe_id) "
+	               "VALUES ({0}, {1})")
+	search_relationship = ("SELECT * FROM recipe_ingredient_relations WHERE ingredient_id={0} AND recipe_id={1}")
+	search_ingredient = ("SELECT * FROM ingredients WHERE name={0}")
+	search_recipe = ("SELECT * FROM recipes WHERE name={0}")
+
+	query = search_recipe.format(sanitize(recipeName))
+	cursor.execute(query)
+	recipe = cursor.fetchone()
+	query = search_ingredient.format(sanitize(ingredientName))
+	cursor.execute(query)
+	ingredient = cursor.fetchone()
+
+	query = search_relationship.format(str(ingredient[0]), str(recipe[0]))
+	if cursor.execute(query):
+		print "--Relationship exists: " + str(ingredient[1]) + " & " + str(recipe[1])
+	else:
+		print "--Inserting relationship: " + str(ingredient[1]) + " & " + str(recipe[1])
+		query = add_relationship.format(str(ingredient[0]), str(recipe[0]))
+		cursor.execute(query)
+
 
 def insertIngredient(ingredient, cursor):
 	add_ingredient = ("INSERT INTO ingredients "

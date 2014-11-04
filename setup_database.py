@@ -44,6 +44,9 @@ def main(csvFile):
 	if not tblExists("ingredients", cursor):
 		createIngredientsTbl(cursor)
 	
+	#create recipe ingredient relations table if it doesn't exist
+	if not tblExists("recipe_ingredient_relations", cursor):
+		createRecipeIngredientRelationsTbl(cursor)
 
 	#insert into the tables
 	databaseTools.insertRecipes(csvFile, cursor)
@@ -67,6 +70,17 @@ def createIngredientsTbl(cursor):
 	  id INTEGER  NOT NULL AUTO_INCREMENT,
 	  name VARCHAR(255)  NOT NULL,
 	  picture TEXT(65535),
+	  PRIMARY KEY(id)
+	)
+	""")
+
+def createRecipeIngredientRelationsTbl(cursor):
+	print "Creating table: recipe ingredient relations"
+	cursor.execute("""
+	CREATE TABLE recipe_ingredient_relations(
+	  id INTEGER  NOT NULL AUTO_INCREMENT,
+	  recipe_id INTEGER  NOT NULL,
+	  ingredient_id INTEGER NOT NULL,
 	  PRIMARY KEY(id)
 	)
 	""")
