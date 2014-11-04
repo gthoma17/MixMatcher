@@ -16,7 +16,12 @@ $def with (ingredients)
 			selectedIngredients = selectedIngredients.concat(id,"|")
 			thisItem.style.background = "red"
 		}
-		console.log("now selected so far: " + selectedIngredients)
+		//console.log("now selected so far: " + selectedIngredients)
+	}
+	function prepAll(total) {
+		for (var i = 1; i <= total; i++) {
+			prepItem("ingredient-"+i)
+		};
 	}
 	function prepItem(id) {
 		thisItem = document.getElementById(id)
@@ -24,13 +29,13 @@ $def with (ingredients)
 		thisItem.addEventListener("click", function(){ toggle(id); });
 	}
 </script>
-
 	$for ingredient in ingredients:
 		<div class="ingredient-selector" id="ingredient-$ingredient.id">
-			<div class="ingredient-name">$ingredient.name</div> <br> <img class="ingredient-pic-small" src="$ingredient.picture">
+			<h4 class="ingredient-name">$ingredient.name</h4>
+			<img class="ingredient-pic-small" src="$ingredient.picture">
 		</div>
-		<script type="text/javascript">
-			prepItem("ingredient-$ingredient.id")
-		</script>
+	<script type="text/javascript">
+		prepAll("$(len(ingredients))")
+	</script>
 
 <script type="text/javascript">main()</script>
