@@ -14,12 +14,18 @@
 	height: 200px;
 	width: 200px;
 }
+.ingredients-all{
+	display: inline-block;
+}
 .ingredient-selector{
 	display:inline-block;
 	margin: 5px;
 	padding: 5px;
 	height: 100px;
-	width: 250px;
+	width: 150px;
+}
+.ingredient-li{
+	display:inline-block;
 }
 .ingredient-name{
 	margin: 0 auto;
@@ -42,4 +48,10 @@
           transform: scale(0.25);
              /* IE6–IE9 */
              filter: progid:DXImageTransform.Microsoft.Matrix(M11=0.9999619230641713, M12=-0.008726535498373935, M21=0.008726535498373935, M22=0.9999619230641713,SizingMethod='auto expand');
+}
+#searchbar{
+	width: 95%;
+	height: 25px;
+	display:block;
+	margin: 0 auto;
 }

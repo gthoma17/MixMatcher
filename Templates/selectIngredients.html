@@ -1,13 +1,16 @@
 $def with (ingredients)
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+<script src="http://listjs.com/no-cdn/list.js"></script>
+<script src="http://listjs.com/no-cdn/list.fuzzysearch.js"></script>
 <link rel="stylesheet" type="text/css" href="static/css/style.css">
 <script type="text/javascript">
 	selectedIngredients = ""
 	function main() {
-		console.log("hello")
+		//is this needed?
 	}
 	function toggle(id) {
 		thisItem = document.getElementById(id)
-		console.log("selected so far: " + selectedIngredients)
+		//console.log("selected so far: " + selectedIngredients)
 		if (selectedIngredients.indexOf(id+"|")>-1) {
 			selectedIngredients = selectedIngredients.replace(id+"|", "")
 			thisItem.style.background = "transparent"
@@ -22,6 +25,10 @@ $def with (ingredients)
 		for (var i = 1; i <= total; i++) {
 			prepItem("ingredient-"+i)
 		};
+		var ingredientList = new List('ingredient-list', { 
+			valueNames: ['ingredient-name'], 
+			plugins: [ ListFuzzySearch() ] 
+		});
 	}
 	function prepItem(id) {
 		thisItem = document.getElementById(id)
@@ -29,13 +36,19 @@ $def with (ingredients)
 		thisItem.addEventListener("click", function(){ toggle(id); });
 	}
 </script>
+<div id="ingredient-list">
+<input type="text" id="searchbar" class="fuzzy-search" />
+<ul class="list">
 	$for ingredient in ingredients:
-		<div class="ingredient-selector" id="ingredient-$ingredient.id">
-			<h4 class="ingredient-name">$ingredient.name</h4>
-			<img class="ingredient-pic-small" src="$ingredient.picture">
-		</div>
+		<li class="ingredient-li">
+			<div class="ingredient-selector" id="ingredient-$ingredient.id">
+				<h4 class="ingredient-name">$ingredient.name</h4>
+				<img class="ingredient-pic-small" src="$ingredient.picture">
+			</div>
+		</li>
 	<script type="text/javascript">
 		prepAll("$(len(ingredients))")
 	</script>
-
+<ul>
+</div>
 <script type="text/javascript">main()</script>
