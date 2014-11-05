@@ -1,8 +1,11 @@
 $def with (recipes)
 <link rel="stylesheet" type="text/css" href="static/css/style.css">
-<ul>
+$if recipes == []:
+	No recipes found =(
+$else:
+	<ul>
 	$for recipe in recipes:
 		<div class="recipe-link">
 			<li><a href="recipe/$recipe.name">$recipe.name <br> <img class="recipe-pic-small" src="$recipe.picture"></a></li>
 		</div>
-</ul>
+	</ul>

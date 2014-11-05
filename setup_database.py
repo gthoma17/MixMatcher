@@ -96,6 +96,7 @@ def createRecipesTbl(cursor):
 	  ingredients TEXT(65535),
 	  rawIngredients TEXT(65535),
 	  picture TEXT(65535),
+	  totalIngredients INTEGER,
 	  PRIMARY KEY(id)
 	)
 	""")

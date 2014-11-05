@@ -9,17 +9,41 @@ $def with (ingredients)
 		//is this needed?
 	}
 	function toggle(id) {
+		//id = id.replace(/\s+/g, '')
 		thisItem = document.getElementById(id)
+		console.log(thisItem)
 		//console.log("selected so far: " + selectedIngredients)
 		if (selectedIngredients.indexOf(id+"|")>-1) {
 			selectedIngredients = selectedIngredients.replace(id+"|", "")
 			thisItem.style.background = "transparent"
+			removeIngredientFromFooter(id)
 		}
 		else{
 			selectedIngredients = selectedIngredients.concat(id,"|")
 			thisItem.style.background = "red"
+			addIngredientToFooter(id)
 		}
 		//console.log("now selected so far: " + selectedIngredients)
+	}
+	function removeIngredientFromFooter(id){
+		console.log("remove from footer "+id)
+		footer = document.getElementById("footer")
+		for (var i = 0; i < footer.childNodes.length; i++) {
+			if (footer.childNodes[i].id == (id + "-footer")) {
+				footer.removeChild(footer.childNodes[i])
+			}			
+		}
+	}
+	function addIngredientToFooter(id){
+		console.log("add to footer "+id)
+		ingredientHtml = document.getElementById(id).innerHTML
+		footerHtml = document.getElementById("footer").innerHTML
+		ingredFooterHtml = "<div id=\"" + id + "-footer\" class=\"footer-ingredient\" onclick=\"toggle(\""+id+"\")\">" + ingredientHtml + "</div>"
+		footerHtml = footerHtml.concat(ingredFooterHtml)
+		footer.innerHTML = footerHtml
+		newDiv = document.getElementById(id+"-footer")
+		newDiv.style.background = "transparent"
+		//newDiv.addEventListener("click", function(){toggle(id)})
 	}
 	function prepAll(total) {
 		for (var i = 1; i <= total; i++) {
@@ -29,15 +53,49 @@ $def with (ingredients)
 			valueNames: ['ingredient-name'], 
 			plugins: [ ListFuzzySearch() ] 
 		});
+		document.getElementById("footer").style.top = (window.innerHeight - 120)
+		document.getElementById("submit").style.top = (window.innerHeight - 120)
 	}
 	function prepItem(id) {
 		thisItem = document.getElementById(id)
 		thisItem.style.background = "transparent"
 		thisItem.addEventListener("click", function(){ toggle(id); });
 	}
+
+	window.onresize = function() {
+	    document.getElementById("footer").style.top = (window.innerHeight - 120)
+	    document.getElementById("submit").style.top = (window.innerHeight - 120)
+	};
+
+	function post(path, params, method) {
+		method = method || "post"; // Set method to post by default if not specified.
+		
+		// The rest of this code assumes you are not using a library.
+		// It can be made less wordy if you use one.
+		var form = document.createElement("form");
+		form.setAttribute("method", method);
+		form.setAttribute("action", path);
+		
+		for(var key in params) {
+			if(params.hasOwnProperty(key)) {
+				var hiddenField = document.createElement("input");
+				hiddenField.setAttribute("type", "hidden");
+				hiddenField.setAttribute("name", key);
+				hiddenField.setAttribute("value", params[key]);
+	
+				form.appendChild(hiddenField);
+			 }
+		}
+		
+		document.body.appendChild(form);
+		form.submit();
+	}
+	function submit(){
+		post('/youCanMake', {ingredients: selectedIngredients})
+	}
 </script>
 <div id="ingredient-list">
-<input type="text" id="searchbar" class="fuzzy-search" />
+<input type="search" id="searchbar" class="fuzzy-search" placeholder="Add ingredients to your invertory..." />
 <ul class="list">
 	$for ingredient in ingredients:
 		<li class="ingredient-li">
@@ -46,9 +104,10 @@ $def with (ingredients)
 				<img class="ingredient-pic-small" src="$ingredient.picture">
 			</div>
 		</li>
-	<script type="text/javascript">
-		prepAll("$(len(ingredients))")
-	</script>
+	
 <ul>
 </div>
+<div id="submit" onclick="submit()"><span id="submitButton">Submit!</span></div>
+<div id="footer"></div>
+<script type="text/javascript">prepAll("$(len(ingredients))")</script>
 <script type="text/javascript">main()</script>

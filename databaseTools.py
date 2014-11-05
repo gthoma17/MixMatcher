@@ -10,8 +10,8 @@ default_image = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAJYAAADICAYAAAAKh
 def insertRecipes(csvFile, cursor):
 	csv_data = csv.reader(file(csvFile))
 	add_recipe = ("INSERT INTO recipes "
-	               "(name, instructions, glass, ingredients, rawIngredients, picture) "
-	               "VALUES ({0}, {1}, {2}, {3}, {4}, {5})")
+	               "(name, instructions, glass, ingredients, rawIngredients, picture, totalIngredients) "
+	               "VALUES ({0}, {1}, {2}, {3}, {4}, {5}, {6})")
 	search_recipe = ("SELECT * FROM recipes WHERE name={0}")
 	
 	csv_data.next()   # skip the first line
@@ -42,12 +42,11 @@ def insertRecipes(csvFile, cursor):
 					print "--No identical recipe found, still not inserting"
 				tblRow = cursor.fetchone()
 		else: #we can insert this new recipe
+			ingredients = pickle.loads(csvRow[4].replace("|","\n"))
 			print "-inserting recipe: " + csvRow[0]
-			query = add_recipe.format(sanitize(csvRow[0]), sanitize(csvRow[1]), sanitize(csvRow[2]), sanitize(csvRow[3]), sanitize(csvRow[4]), sanitize(image))
+			query = add_recipe.format(sanitize(csvRow[0]), sanitize(csvRow[1]), sanitize(csvRow[2]), sanitize(csvRow[3]), sanitize(csvRow[4]), sanitize(image), sanitize(len(ingredients)))
 			cursor.execute(query)
 			print "-inserting ingredients into ingredient table"
-			recipeId = cursor.lastrowid
-			ingredients = pickle.loads(csvRow[4].replace("|","\n"))
 			
 			for ingredient in ingredients:
 				insertIngredient(ingredient, cursor)
@@ -91,4 +90,4 @@ def insertIngredient(ingredient, cursor):
 		cursor.execute(query)
 
 def sanitize(inString):
-	return "'"+(inString.replace("'","\\'").rstrip().lstrip())+"'"
+	return "'"+(str(inString).replace("'","\\'").rstrip().lstrip())+"'"

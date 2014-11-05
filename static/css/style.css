@@ -40,7 +40,7 @@
 	margin: 0 auto;
 	display: block;
 	position:relative;
-	top:-50px;
+	top:-55px;
 	-webkit-transform: scale(0.25); /* Saf3.1+, Chrome */
      -moz-transform: scale(0.25); /* FF3.5+ */
       -ms-transform: scale(0.25); /* IE9 */
@@ -54,4 +54,38 @@
 	height: 25px;
 	display:block;
 	margin: 0 auto;
+}
+#footer{
+	display:block;
+	margin: 0 auto;
+	height: 120px;
+	width: 100%;
+	position: fixed;
+	background-color: #999; 
+	z-index: 10;
+	left:150px;
+	top:0px;
+	overflow-x: scroll;
+	overflow-y: hidden;
+	white-space: nowrap;
+}
+#submit{
+	display:block;
+	height: 120px;
+	width: 150px;
+	position: fixed;
+	background-color: #1D9100; 
+	z-index: 9;
+	white-space: nowrap;
+}
+#submitButton{
+	width: 100%;
+	line-height: 120px;
+	display:inline-block; 
+	vertical-align:middle;
+	text-align: center;
+	font-size: 2.25em;
+}
+.footer-ingredient{
+	display:inline-block;
 }

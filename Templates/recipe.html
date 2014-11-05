@@ -7,7 +7,7 @@ $def with (recipe)
 <div id="ingredients">
 	<h3>Ingredients:</h3>
 	<ul>
-	$for ingredient in recipe.ingredients.replace("\'","")[1:-1].split(","):
+	$for ingredient in recipe.ingredients:
 		<li>$ingredient</li>
 	</ul>
 </div>
