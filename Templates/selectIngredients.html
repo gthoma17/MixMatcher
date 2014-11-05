@@ -8,6 +8,10 @@ $def with (ingredients)
 	function main() {
 		//is this needed?
 	}
+	function inventoryToggle(id){
+		console.log("inventoryToggle")
+		
+	}
 	function toggle(id) {
 		//id = id.replace(/\s+/g, '')
 		thisItem = document.getElementById(id)
@@ -38,12 +42,12 @@ $def with (ingredients)
 		console.log("add to footer "+id)
 		ingredientHtml = document.getElementById(id).innerHTML
 		footerHtml = document.getElementById("footer").innerHTML
-		ingredFooterHtml = "<div id=\"" + id + "-footer\" class=\"footer-ingredient\" onclick=\"toggle(\""+id+"\")\">" + ingredientHtml + "</div>"
+		ingredFooterHtml = "<div id=\"" + id + "-footer\" class=\"footer-ingredient\">" + ingredientHtml + "</div>"
 		footerHtml = footerHtml.concat(ingredFooterHtml)
 		footer.innerHTML = footerHtml
 		newDiv = document.getElementById(id+"-footer")
 		newDiv.style.background = "transparent"
-		//newDiv.addEventListener("click", function(){toggle(id)})
+		newDiv.addEventListener("click", inventoryToggle, false)
 	}
 	function prepAll(total) {
 		for (var i = 1; i <= total; i++) {
